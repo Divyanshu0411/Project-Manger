@@ -1,0 +1,49 @@
+.timeline-list {
+  @apply w-[300px];
+}
+.timeline-item {
+  @apply bg-white dark:bg-gray-900 truncate text-sm px-1.5;
+}
+
+.timeline-track {
+  @apply px-1 flex items-center relative transition-all;
+}
+
+.timeline-track-container {
+  @apply whitespace-nowrap relative text-gray-600 w-full bg-white dark:bg-gray-700 dark:text-gray-200 dark:shadow-gray-900 dark:border-gray-600 px-2.5 py-2 text-sm  rounded-md border border-gray-300 shadow-md shadow-indigo-50;
+
+  & .progressbar {
+    @apply dark:bg-gray-800;
+  }
+}
+
+.timeline-track-handler {
+  @apply absolute top-0 cursor-w-resize h-full w-[10px] bg-gray-50/50 hover:bg-gray-200/60 active:bg-red-200/50 rounded-md border border-transparent hover:border-gray-200 border-dashed;
+  @apply dark:bg-gray-900/20 dark:hover:bg-gray-600/60 dark:hover:border-gray-500;
+}
+
+.timeline-track-handler.right {
+  @apply -right-1.5;
+}
+.timeline-track-handler.left {
+  @apply -left-1.5;
+}
+
+.timeline {
+  @apply w-full overflow-x-hidden overflow-y-auto;
+  @apply dark:border-gray-700;
+  @apply relative;
+  height: calc(100vh - 260px);
+
+  .timeline-month-headers {
+    @apply sticky top-0 left-0 z-10 bg-white dark:bg-gray-900;
+  }
+
+  .timeline-week-headers {
+    @apply sticky top-[28px] left-0 z-10 bg-white dark:bg-gray-900;
+  }
+}
+
+.timeline-columns {
+  @apply grid divide-x divide-gray-200 dark:divide-gray-700 divide-dashed col-start-1 row-start-1 row-end-2;
+}

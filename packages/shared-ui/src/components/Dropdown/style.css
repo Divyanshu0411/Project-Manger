@@ -1,0 +1,26 @@
+.dropdown-menu-content {
+  @apply bg-white border rounded-md py-1.5 shadow-lg;
+  min-width: auto;
+}
+
+.dropdown-arrow {
+  fill: white;
+}
+
+.dropdown-item {
+  @apply flex items-center text-sm px-3 py-2 cursor-pointer;
+  @apply text-gray-500 dark:text-gray-400 min-w-[150px];
+  @apply hover:bg-gray-100;
+
+  svg {
+    @apply w-4 h-4
+  }
+}
+
+.dropdown-item .right-slot {
+  @apply ml-auto text-gray-400;
+}
+
+.dropdown-item[data-disabled] {
+  @apply opacity-50;
+}
