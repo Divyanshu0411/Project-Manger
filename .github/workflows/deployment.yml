@@ -1,4 +1,4 @@
-name: Deploy Namviek
+name: Deploy Divyanshu
 on: 
   push:
     branches:
