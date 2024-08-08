@@ -2,7 +2,7 @@ This project is an open-source project manager for small teams with low budget. 
 
 ## Who is this for ?
 
-This project is a great fit for people with developer skills who are running a small team on a limited budget, similar to me. Read full the [post](https://dev.to/hudy9x/i-built-a-free-open-source-project-manager-that-helps-teams-keep-costs-under-15month-3pmk)
+This project is a great fit for people with developer skills who are running a small team on a limited budget, similar to me.
 
 ## What tech stack I use
 
